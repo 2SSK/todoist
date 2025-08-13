@@ -31,7 +31,7 @@ jobs:
 
       # 4. Prebuild native Android project
       - name: Generate Android project files
-        run: npx expo prebuild --platform android --no-interactive
+        run: npx expo prebuild --platform android
 
       # 5. Set up Java JDK (required for Gradle)
       - name: Setup Java
