@@ -11,11 +11,8 @@
     "preview": {
       "distribution": "internal",
       "android": {
+        "image": "latest",
         "buildType": "apk"
-      },
-      "env": {
-        "CONVEX_DEPLOYMENT": "",
-        "EXPO_PUBLIC_CONVEX_URL": ""
       }
     },
     "production": {}
