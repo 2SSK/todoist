@@ -1,6 +1,7 @@
 {
   "cli": {
-    "version": ">= 0.52.0"
+    "version": ">= 16.17.4",
+    "appVersionSource": "remote"
   },
   "build": {
     "development": {
@@ -8,10 +9,18 @@
       "distribution": "internal"
     },
     "preview": {
+      "distribution": "internal",
       "android": {
         "buildType": "apk"
+      },
+      "env": {
+        "CONVEX_DEPLOYMENT": "",
+        "EXPO_PUBLIC_CONVEX_URL": ""
       }
     },
+    "production": {}
+  },
+  "submit": {
     "production": {}
   }
 }
