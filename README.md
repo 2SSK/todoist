@@ -1,50 +1,91 @@
-# Welcome to your Expo app 👋
+# React Native Todo App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+This is a simple todo application built with React Native, Expo, and Convex. I created this as a pet project to practice my mobile development skills.
 
-## Get started
+## Features
 
-1. Install dependencies
+- Add new todos
+- Mark todos as complete
+- Clear all todos
+- Light and dark mode support
+- Settings page to reset the app
 
-   ```bash
-   npm install
-   ```
+## Tech Stack
 
-2. Start the app
+- **Frontend:** React Native with Expo
+- **Backend:** Convex
+- **Language:** TypeScript
+- **Navigation:** React Navigation
+- **Styling:** Custom stylesheets with `expo-linear-gradient`
 
-   ```bash
-   npx expo start
-   ```
+## Getting Started
 
-In the output, you'll find options to open the app in a
+### Prerequisites
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- Node.js (v18 or higher)
+- Expo CLI
+- A free Convex account
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+### Installation
 
-## Get a fresh project
+1.  Clone the repository:
 
-When you're ready, run:
+    ```bash
+    git clone https://github.com/2SSK/todoist.git
+    cd todoist
+    ```
 
-```bash
-npm run reset-project
+2.  Install the dependencies:
+    ```bash
+    npm install
+    ```
+
+### Configuration
+
+1.  Create a new Convex project.
+2.  Copy the `.env.example` file to a new file named `.env`:
+    ```bash
+    cp .env.example .env
+    ```
+3.  In your Convex project dashboard, go to "Settings" and copy your "Deployment URL".
+4.  Paste the URL into your `.env` file:
+    ```
+    CONVEX_URL=https://your-deployment-name.convex.cloud
+    ```
+
+### Running the App
+
+1.  Start the development server:
+    ```bash
+    npm start
+    ```
+2.  Follow the instructions in the terminal to run the app on an Android emulator, iOS simulator, or on the web.
+
+## Project Structure
+
+```
+.
+├── app/              # Expo Router pages
+├── assets/           # Fonts, images, and styles
+├── convex/           # Convex backend schema and functions
+├── hooks/            # Custom hooks
+├── _components/      # Reusable components
+├── scripts/          # Node.js scripts
+├── .env.example      # Example environment variables
+├── app.json          # Expo configuration
+├── package.json      # Project dependencies
+└── tsconfig.json     # TypeScript configuration
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Scripts
 
-## Learn more
+- `npm start`: Starts the Expo development server.
+- `npm run android`: Starts the app on a connected Android device or emulator.
+- `npm run ios`: Starts the app on the iOS simulator.
+- `npm run web`: Starts the app in a web browser.
+- `npm run lint`: Lints the project files using ESLint.
+- `npm run reset-project`: Resets the project to its initial state.
 
-To learn more about developing your project with Expo, look at the following resources:
+## Deployment
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+This project is configured for deployment with [Expo Application Services (EAS)](https.expo.dev/eas). To build and submit your app, refer to the EAS documentation.
