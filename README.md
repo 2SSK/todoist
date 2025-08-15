@@ -1,6 +1,10 @@
-# React Native Todo App
+# TODOIST
 
 This is a simple todo application built with React Native, Expo, and Convex. I created this as a pet project to practice my mobile development skills.
+
+<div style="display: flex; justify-content: center; align-items: center; margin-bottom: 20px;">
+<img src="./assets/demo.gif" alt="Todoist Demo" height="500" />
+</div>
 
 ## Features
 
@@ -18,48 +22,25 @@ This is a simple todo application built with React Native, Expo, and Convex. I c
 - **Navigation:** React Navigation
 - **Styling:** Custom stylesheets with `expo-linear-gradient`
 
-## Getting Started
+## Installation
 
-### Prerequisites
+You can install the app on your Android device by downloading the latest APK from our [releases page](https://github.com/2SSK/todoist/releases).
 
-- Node.js (v18 or higher)
-- Expo CLI
-- A free Convex account
+1.  Go to the releases page.
+2.  Download the `.apk` file from the latest release.
+3.  Open the downloaded file on your Android device to install it.
 
-### Installation
+## Contributing
 
-1.  Clone the repository:
+We welcome contributions from the community! If you'd like to contribute, please follow these steps:
 
-    ```bash
-    git clone https://github.com/2SSK/todoist.git
-    cd todoist
-    ```
+1.  Fork the repository.
+2.  Create a new branch for your feature or bug fix.
+3.  Make your changes and commit them with a clear message.
+4.  Push your changes to your fork.
+5.  Create a pull request to the main repository.
 
-2.  Install the dependencies:
-    ```bash
-    npm install
-    ```
-
-### Configuration
-
-1.  Create a new Convex project.
-2.  Copy the `.env.example` file to a new file named `.env`:
-    ```bash
-    cp .env.example .env
-    ```
-3.  In your Convex project dashboard, go to "Settings" and copy your "Deployment URL".
-4.  Paste the URL into your `.env` file:
-    ```
-    CONVEX_URL=https://your-deployment-name.convex.cloud
-    ```
-
-### Running the App
-
-1.  Start the development server:
-    ```bash
-    npm start
-    ```
-2.  Follow the instructions in the terminal to run the app on an Android emulator, iOS simulator, or on the web.
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
 
 ## Project Structure
 
